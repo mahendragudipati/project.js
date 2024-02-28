@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divmain{
+            border: 3px solid black;
+            margin-top: 3%;
+
+        }
+        #img{
+            width:200px;
+            height:200px;
+            margin-top: 80px;
+            margin-left: 120px;
+            background-image: url(./dd3.jpeg);
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+        #img1{
+            width:200px;
+            height:200px;
+            margin-top: 80px;
+            margin-left: 120px;
+            background-image: url(./dd.jpeg);
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+        #img2{
+        width:200px;
+        height:200px;
+        margin-top: 80px;
+        margin-left: 120px;
+        background-image: url(./dd1.jpeg);
+        background-repeat: no-repeat;
+        display: inline-block;
+        }
+        #img3{
+            width:200px;
+            height:200px;
+            margin-top: 80px;
+            margin-left: 120px;
+            display: inline-block;
+            background-image: url(./dd4.jpg);
+            background-size: cover;
+            }
+        #div1{
+            border:2px solid black;
+            width:400px;
+            height: 300px;
+        
+        
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    var h=document.createElement("div")
+    document.body.appendChild(h)
+    h.setAttribute("id","div1")
+
+    var c=document.createElement("center")
+    document.body.appendChild(c)
+    c.appendChild(h)
+
+  
+
+
+    var b=document.createElement("div")
+    document.body.appendChild(b)
+    b.setAttribute("id","img")
+    b.addEventListener("click",funs)
+    function funs(){
+    
+    h.style.backgroundImage="url('dd3.jpeg')";
+    h.style.backgroundRepeat="no-repeat"
+    h.style.backgroundPosition="center"
+}
+
+    var d=document.createElement("div")
+    document.body.appendChild(d)
+    d.setAttribute("id","img1")
+    d.addEventListener("click",funst)
+    function funst(){
+    
+    h.style.backgroundImage="url('dd.jpeg')";
+    h.style.backgroundRepeat="no-repeat"
+    h.style.backgroundPosition="center"
+    
+}
+
+
+    var g=document.createElement("div")
+    document.body.appendChild(g)
+    g.setAttribute("id","img3")
+    g.addEventListener("click",funss)
+    function funss(){
+    
+    h.style.backgroundImage="url('dd4.jpg')";
+    h.style.backgroundRepeat="no-repeat"
+    h.style.backgroundPosition="center"
+    h.style.backgroundSize="cover"
+
+
+        
+        
+    }
+
+    var b=document.createElement("div")
+    document.body.appendChild(b)
+    b.setAttribute("id","img")
+    b.addEventListener("click",funs)
+    function funs(){
+    
+    h.style.backgroundImage="url('dd3.jpeg')";
+    h.style.backgroundRepeat="no-repeat"
+    h.style.backgroundPosition="center"
+}
+
+    
+
+
+
+   
+    
+    
+</script>
+</html>

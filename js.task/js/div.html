@@ -1,0 +1,72 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1{
+            color: rgb(255, 0, 183);
+        }
+        /* #mahi{
+            border: 1px solid ;
+            height: 20px;
+            width: 500px;
+        } */
+    </style>
+</head>
+<body>
+    <center>
+     <h1>**LOADING**</h1>
+         
+    <button>25</button>
+    <button>50</button>
+    <button>75</button>
+    <button>100</button>
+</center>
+<br><br>
+    <script>
+        // var cen=document.createElement("center")
+        // document.body.appendChild(cen)+
+   var btn=document.getElementsByTagName("button")
+   btn[0].addEventListener("click",one)
+   btn[1].addEventListener("click",two)
+   btn[2].addEventListener("click",three)
+   btn[3].addEventListener("click",four)
+//    cen.appendChild(btn)
+//    var brr=document.createElement("hr")
+//    brr.style.visibility="hidden"
+//    document.body.appendChild(brr)
+   
+
+   var divv=document.createElement("div")
+//    document.body.appendChild(divv)
+
+
+   function one(){
+     document.body.appendChild(divv)
+     divv.style.width="25%"
+     divv.style.height="30px"
+     divv.style.backgroundColor="yellow"
+
+   }
+   function two(){
+    document.body.appendChild(divv)
+    divv.style.width="50%"
+    divv.style.height="30px"
+    divv.style.backgroundColor="blue"   
+}
+    function three(){
+        document.body.appendChild(divv)
+        divv.style.width="75%"
+        divv.style.height="30px"
+        divv.style.backgroundColor="pink"
+    }
+    function four(){
+        document.body.appendChild(divv)
+        divv.style.width="100%"
+        divv.style.height="30px"
+        divv.style.backgroundColor="orange"
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: rgb(246, 5, 73);
+            text-align: center;
+            margin-top: 90PX;
+        }
+        #but{
+            /* text-align: center; */
+            position: relative;
+            left: 720px;
+            top: 50px;
+        }
+        #mg{
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+
+    <h2>**THIS PAGE IS LOADING**</h2>
+    <script>
+        var dd=localStorage.getItem("img")
+         var imgg=document.getElementsByTagName("img")
+         console.log(imgg);
+        //  imgg.style.width="200px"
+         imgg[0].setAttribute("src",dd)
+         imgg.setAttribute("div","mg")
+        //  imgg.style.width="200px"
+        //  imgg.style.height="300px"
+        var btn=document.createElement("button")
+        document.body.appendChild(btn)
+        btn.setAttribute("id","but")
+        btn.innerText="GO BACK"
+        btn.addEventListener("click",mahi)
+        
+        function mahi(){
+            window.history.back("./card.html")
+        }
+    </script>
+</body>
+</html>

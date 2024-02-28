@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  form{
+     border: 1px solid;
+     width: 450px;
+     height: 400px;
+     position:relative;
+     color:rgb(5, 1, 254);
+     top: 150px;
+     background-color: rgba(19, 233, 208, 0.742);
+     border-radius: 50px;
+     opacity: 0.8;
+  }
+  div{
+     position: relative;
+     top: 100px;
+  }
+  body{
+     background-color: rgba(0, 255, 255, 0.426);
+     background-image: url(./imgs/m3.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+  }
+  h1{
+    /* color: rgba(0, 255, 17, 0.819); */
+    color: rgb(194, 188, 192);
+    font-size: 50px;
+    position: absolute;
+    left:420px; 
+    top:0px;
+  }
+  h2{
+    position: absolute;
+    top: 95px;
+    left:650px;
+    font-size: 30px;
+    color: rgb(238, 9, 135);
+  }
+    </style>
+ </head>
+ <body>
+     
+     <center>
+        <h1>🅸🅽🆂🆃🅰🅶🆁🅰🅼 🅻🅾🅶🅸🅽</h1>
+        <h2>🎀  𝐿💗𝒢𝐼𝒩  🎀</h2>
+     <form><div>
+         
+         <label for="username">USERNAME:</label>
+         <input type="text"id="username" placeholder="username" required><br><br>
+         <label for="password">PASSWORD:</label>
+         <input type="password"id="password" placeholder="password" minlength="8" required><br><br>
+         <label for="cpassword">CONFIRM PASSWORD:</label>
+         <input type="password" id="cpassword"placeholder="confirm password" minlength="8" required><br><br>
+         <label for="dob"> DATE OF BIRTH:</label>
+         <input type="date"id="date" required><br><br>
+         <label for="mobile">MOBILE :</label>
+         <input type="text"id="mobile" placeholder="mobile number" maxlength="10" required><br><br>
+         <!-- <button >register</button> -->
+         <!-- <input type="button" value="submit"/> -->
+         <button>SUBMIT</button>
+        
+ 
+     </form> </div>
+    
+ 
+ 
+     <script>
+         a=[]
+        var formm=document.forms
+        formm[0].addEventListener("submit",(event)=>
+         {
+             event.preventDefault();
+ var userdata={
+     username:event.target[0].value,
+  password:event.target[1].value,
+              confirmpassword:event.target[2].value,
+              mobile:event.target[3].value
+ }
+ if(userdata.password===userdata.confirmpassword){
+ 
+ 
+ a.push(userdata)
+ window.location.assign("./login1.html")
+ 
+ }
+ else{
+     alert("password not same")
+ }
+ console.log(a)
+     event.target[0].value=""
+     event.target[1].value=""
+     event.target[2].value=""
+     event.target[3].value=""
+ 
+ window.localStorage.setItem("user",JSON.stringify(a))
+ // window.location.assign("./card.html")
+         });
+        
+ 
+ //        function mahi(event){
+         
+ 
+ //         var arr={
+ //             username:event.target[0].value,
+ //             password:event.target[1].value,
+ //             confirmpassword:event.target[2].value,
+ //             mobile:event.target[3].value
+ 
+ //         }
+ //         a.push(arr)
+ // console.log(a)
+ // username:event.target[0].value=""
+ // password:event.target[1].value=""
+ //             confirmpassword:event.target[2].value=""
+ //             mobile:event.target[3].value=""
+ 
+ 
+ //        }
+ </script>
+ </body>
+ </html>
